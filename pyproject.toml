@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "vae-playground"
+version = "0.1.0"
+description = ""
+authors = ["BuelentUendes <buelent.tt@web.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+matplotlib = "^3.9.1.post1"
+torch = {version = "2.2.2", python = "^3.9", platform = "darwin"}
+torchvision = {version = "0.17.2", python = "^3.9", platform = "darwin"}
+pyyaml = "^6.0.2"
+numpy = "1.26.4"
+
+
+[[tool.poetry.source]]
+name = "pytorch-gpu"
+url = "https://download.pytorch.org/whl/cu118"
+priority = "explicit"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
